@@ -118,5 +118,3 @@ the document.
 
 if __name__ == "__main__":
     sorted_sentences = main()
-    print(sorted_sentences)
-    
