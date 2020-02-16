@@ -1,0 +1,38 @@
+{
+  "name": "vthacks",
+  "version": "1.0.0",
+  "description": "Market Research Analytics AI Tool.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QasimWani/VTHacks.git"
+  },
+  "author": "Qasim Wani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/QasimWani/VTHacks/issues"
+  },
+  "homepage": "https://github.com/QasimWani/VTHacks#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child-process": "^1.0.2",
+    "compression": "^1.7.4",
+    "cookie-session": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-http-to-https": "^1.1.4",
+    "express-sanitizer": "^1.0.5",
+    "express-session": "^1.17.0",
+    "fetch": "^1.1.0",
+    "fs": "0.0.1-security",
+    "memorystore": "^1.6.2",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.1",
+    "request": "^2.88.2"
+  }
+}
