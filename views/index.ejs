@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Market Research AI</title>
+        <meta name="google-site-verification" content="Vgaui4xyRIVrLE2sV1Wpw8YCLOaJE3QJ1eDQiADN3gk" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HitchHiqe is a free carpooling app for college students.">
+        <meta name="keywords" content="Progressive Web App (PWA), Hitchhiqe, Carpool, rideshare, College, Free, Travel, MIT">
+        <meta name="author" content="Qasim Wani, Sai Gurrapu, David Guckian">
+        <meta property="og:image" content="https://saig18.github.io/HitchHiqe/img/overpass.jpg">
+        <link rel="icon" href="https://saig18.github.io/HitchHiqe/img/overpass.jpg">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+        <script src="https://momentjs.com/downloads/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <base href="/">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="shortcut icon" href="https://saig18.github.io/HitchHiqe/img/overpass.jpg" type="image/x-icon">
+        <link rel="stylesheet"  type="text/css" href="stylesheets/header.css">
+        <link rel="icon" href="https://saig18.github.io/HitchHiqe/img/overpass.jpg" type="image/x-icon">
+</head>
+
+<!-- Mobile Optimized-->
+<style>
+#mb-19
+{
+    margin-bottom:100% !important;
+}
+</style>
+<br><br>
+<div class="ui center aligned red header container" id="error_message"></div>
+<br><br>
+<div class="ui center aligned container equal width">
+    <div class="fields">
+    <div class="field">
+    <form id="new_pass" class="ui form" method="POST" action="/search">
+        <label class="ui center aligned large header">Enter your Query</label>
+        <br>
+        <input required id="two" type="text" autocomplete="on" style="width:50%;margin-bottom:60px;margin-top:30px;height:50px;" name="query" placeholder="What would you like to research on?">
+        <br>
+        <button class="ui animated green button" tabindex="0">
+        <div class="visible content">Launch my Report</div>
+        <div class="hidden content">
+            <i class="right arrow icon"></i>
+        </div>
+        </button>
+    </form>
+    </div>
+    </div>
+</div>

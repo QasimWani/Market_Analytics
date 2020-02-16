@@ -75,4 +75,4 @@ def main(ORIGINAL_TEXT):
     return final_list
 
 if __name__ == "__main__":
-    sorted_sentences = main(data)
+    sorted_sentences = main()
