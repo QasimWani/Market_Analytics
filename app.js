@@ -52,7 +52,7 @@ app.use(function(req, res, next){
   next();
 });
 
-// const indexRoutes = require("./routes/index"),
+const searchEngine = require("./routes/search");
 //     marketplaceRoutes = require("./routes/marketplace"),
 //     endpointRoutes = require("./routes/endpoint");
 
