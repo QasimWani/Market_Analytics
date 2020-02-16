@@ -20,7 +20,7 @@ def calculate_sentence_frequency(sentence, average_sentence_word_count):
                 word_frequencies[word] = 1
             else:
                 word_frequencies[word] += 1
-        max_word_frequency = max(word_frequencies.values())   
+        max_word_frequency = max(word_frequencies.values()) if len(word_frequencies.values()) > 0 else 1
         for word in word_frequencies.keys():
             word_frequencies[word] /= max_word_frequency
     return word_frequencies
@@ -44,31 +44,9 @@ def get_text_weighted_score(paragraph, average_word_count):
                 sentence_scores[sent] += word_frequencies[word]
     return sentence_scores
 
-def main():
+def main(ORIGINAL_TEXT):
     STOPWORDS = set(stopwords.words('english'))
     STOPWORDS.add("-")
-    
-    ORIGINAL_TEXT = """It's been shown time and time again to help people avoid accidents. In fact, Tesla CEO Elon Musk said in April that Autopilot can help reduce accidents by as much as 50%.
-
-But just like any system, it's not perfect. And it requires a human to pay attention at all times. 
-
-On Thursday, regulators revealed an investigation into a possible tie between Tesla's Autopilot system and a fatal accident.
-
-While few details about the collision have been revealed, Tesla has said that the car was in Autopilot mode when the car crashed.
-
-Here's a closer look at how Autopilot works to help you better understand how it should be used.
-Tesla's Autopilot system is made up of multiple sensors placed all around the car. These sensors help the car understand its environment so that it can safely steer itself in most highway situations.
-The hardware that makes up Tesla's self-driving system includes a forward radar, a forward-looking camera, a high-precision digitally-controlled electric assist braking system, and 12 long-range ultrasonic sensors placed around the car. 
-
-
-These ultrasonic sensors are strategically placed around the car so that they can sense 16 feet around the car in every direction, at any speed.
-The senors enable the vehicle to sense when something is too close and gauge the appropriate distance so that it can do things like safely change lanes. 
-
-However, it should be noted that these sensors can be thrown off by things like debris covering them. 
-
-The radar enables detection of cars and other moving objects.
-The forward-facing camera is located on the top windshield. A computer inside the camera helps the car understand what obstacles are ahead of the car.
-The camera is basically the system's eyes. It enables the car to detect traffic, pedestrians, road signs, lane markings, and anything else that might be in front of the vehicle. This information is then used to help the car drive itself."""
     
     intermedia_text = ORIGINAL_TEXT.lower().replace(". ", " qwertyuiop")
     intermedia_text = re.sub('[^a-zA-Z]', ' ', intermedia_text )
@@ -97,4 +75,4 @@ The camera is basically the system's eyes. It enables the car to detect traffic,
     return final_list
 
 if __name__ == "__main__":
-    sorted_sentences = main()
+    sorted_sentences = main(data)

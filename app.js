@@ -3,7 +3,6 @@ const express = require("express"),
       moment  = require("moment"),
       mongoose = require("mongoose"),
       compression = require("compression"),
-      request = require("request"),
       methodOverride    = require("method-override"),
       dotenv        = require("dotenv"),
       expressSanitizer = require('express-sanitizer'),
@@ -59,6 +58,8 @@ const searchEngine = require("./routes/search");
 // app.use("/produce", endpointRoutes);
 // app.use("/marketplace", marketplaceRoutes);
 // app.use("/", indexRoutes);
+
+app.use("/search", searchEngine);
 
 // app.get("/", function(req, res){
 //     return res.render("partials/landing/index");

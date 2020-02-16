@@ -13,6 +13,8 @@ import nltk
 import pandas as pd
 from nltk.corpus import stopwords
 
+
+
 def pre_process_text(ORIGINAL_TEXT):
     """Polishes text"""
     STOPWORDS = set(stopwords.words('english'))
@@ -74,15 +76,7 @@ def generate_tf_idf(paragraph, ORIGINAL_TEXT):
 
 
 
-def main():
-    ORIGINAL_TEXT = ["In fact, Tesla CEO Elon Musk said in April that Autopilot can help reduce accidents by as much as 50%.\n\nBut just like any system, it's not perfect",
- '\n\nHowever, it should be noted that these sensors can be thrown off by things like debris covering them',
- "These sensors help the car understand its environment so that it can safely steer itself in most highway situations.\nThe hardware that makes up Tesla's self-driving system includes a forward radar, a forward-looking camera, a high-precision digitally-controlled electric assist braking system, and 12 long-range ultrasonic sensors placed around the car",
- "\n\nOn Thursday, regulators revealed an investigation into a possible tie between Tesla's Autopilot system and a fatal accident.\n\nWhile few details about the collision have been revealed, Tesla has said that the car was in Autopilot mode when the car crashed.\n\nHere's a closer look at how Autopilot works to help you better understand how it should be used.\nTesla's Autopilot system is made up of multiple sensors placed all around the car",
- '\n\n\nThese ultrasonic sensors are strategically placed around the car so that they can sense 16 feet around the car in every direction, at any speed.\nThe senors enable the vehicle to sense when something is too close and gauge the appropriate distance so that it can do things like safely change lanes',
- 'And it requires a human to pay attention at all times',
- '\n\nThe radar enables detection of cars and other moving objects.\nThe forward-facing camera is located on the top windshield',
- "\n    It's been shown time and time again to help people avoid accidents"]
+def main(ORIGINAL_TEXT):
     POLISHED_TEXT = pre_process_text(ORIGINAL_TEXT)
     #Incorporating stemming instead of lemmatization because of performance and speed.
     stemmer = SnowballStemmer('english')
