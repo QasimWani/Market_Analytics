@@ -1,7 +1,6 @@
 # Market Analytics
 #
-## VTHacks 7 - <a href="https://devpost.com/software/market-analytics">Devpost</a>
-### Winner of Best complex ML application
+## VTHacks 7 - <a href="https://devpost.com/software/market-analytics">Devpost</a> Winner of Best complex ML application
 
 ### What we built?
 <p><strong> A next gen recommender system for providing Market Analysis on an idea/topic/business model.</strong></p>
