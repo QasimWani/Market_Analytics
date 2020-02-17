@@ -1,4 +1,6 @@
-# VTHacks 7 <span style="font-size:0.8em;"><a href="https://devpost.com/software/market-analytics">Devpost</a></span>
+# Market Analytics
+<br>
+## VTHacks 7 - <a href="https://devpost.com/software/market-analytics">Devpost</a>
 ### Winner of Best complex ML application
 
 ### What we built?
