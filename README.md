@@ -1,5 +1,5 @@
 # Market Analytics
-<br>
+#
 ## VTHacks 7 - <a href="https://devpost.com/software/market-analytics">Devpost</a>
 ### Winner of Best complex ML application
 
